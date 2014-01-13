@@ -1,28 +1,368 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+
+
+<!--
+#######################################
+	- THE HEAD PART -
+######################################
+-->
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>freshCount - Parallax Coming Soon</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1265">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier}
-  </style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- Comment in for best IE quality (not W3C conform, but we say "Do it ;)"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+	<title>freshCount - Parallax Coming Soon</title>
+	<link rel="icon" type="image/png" href="images/sitelogo.png">
+	
+    <!-- commented, remove this line to use IE & iOS favicons -->           
+    <link rel="shortcut icon" href="images/favicon.ico" >
+
+    <!-- get jQuery from the google apis -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>	
+		
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	
+	<!-- IE Hack for Input Fields -->
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="css/styleadd_IE8.css" media="screen"><![endif]-->
+	
+	
+	
+	<!-- 
+	###############################################################################################
+		
+										-	THE COLOR THEME  -
+				(theme-blue, theme-gold, theme-green, theme-red, theme-yellow, theme-grey)
+		
+	###############################################################################################
+	-->	
+	<link rel="stylesheet" type="text/css" href="css/theme-grey.css" media="screen">
+	<!-- #######################################################################################-->
+	
+	
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/demo.css" media="screen">	
+	
+
+	
+	<!-- jQuery PARALLAX  -->
+	<script type="text/javascript" src="js/parallax/js/freshline/jquery.freshline.Parallax.min.js"></script>
+	<script type="text/javascript" src="js/timer/js/freshline/jquery.freshline.Timer.js"></script>
+	<script type="text/javascript" src="js/swapme/js/freshline/jquery.freshline.Swapme.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/parallax.css" media="screen">
+	
+	<!-- Newsletter Mail Sender -->
+	<script src="js/newsletter/js/sender.js" type="text/javascript"></script>
+	
+	
+	<!-- FONT IMPORT -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>    
 </head>
-<body>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space"> </span>&lt;STYLE type="text/css" media="projection"&gt;</p>
-<p class="p1"><span class="Apple-converted-space"> </span>iframe[seamless]{</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border: 0px none transparent;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
-<p class="p1">}</p>
-<p class="p1"><span class="Apple-converted-space"> </span>&lt;/STYLE&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;&lt;iframe frameborder="0" allowtransparency="true" scrolling="no" src=”http”://promo-code.be&gt;&lt;/iframe&gt;</p>
-<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
-</body>
+
+
+
+<!--
+#######################################
+	- THE BODY PART -
+######################################
+-->
+<body class="bg-class">
+
+
+			
+			
+			<!-- 
+			##############################
+				TOP BACKGROUND 
+			##############################
+			-->
+			<div class="top_background"><div class="top_background_image"></div></div>
+			
+
+		
+			<!-- 
+			##############################
+				HEAD WITH SITELOGO 
+			##############################
+			-->
+			<div class="logoholder">						
+				<div id="sitelogo"></div>												
+			</div>		
+			
+			
+			
+			<!--
+			###################################
+					CONTENT OF THE PAGE
+			##################################
+			-->
+			<div class="content_holder">
+				<div class="content_shadow"></div>
+				<div class="content">
+										
+					<div class="content-head">
+							<div class="title color-style">Our Website is Under Construction</div>
+							<div class="subtitle grey">We'll be here soon with a new website. Estimated Time Remaing:</div>
+							
+					</div>
+					
+					
+					<div class="content-head-background"></div>	
+					
+					
+					<div id="countdown" class="timer">
+						<div class="cd days white first"><span id="DD">0</span><p class="small color-style">DAYS</p></div>
+						<div class="cd hours white"><span id="HH">0</span><p class="small color-style">HOURS</p></div>
+						<div class="cd minutes white"><span id="MM">0</span><p class="small color-style">MINUTES</p></div>
+						<div class="cd seconds white"><span id="SS">0</span><p class="small color-style">SECONDS</p></div>
+						<div style="clear:both"></div>
+					</div>
+					
+					<div class="more_button_container">
+						<div id="more_button_txt"><span class="cont_1">About</span><span style="display:none" class="cont_2">Back</span></div>							
+						<div style="clear:both" id="more_button"></div>
+					</div>
+					
+					<div class="content-foot">
+									<div id="footer" style="margin-top:20px">
+										<div class="one_fourth">
+											<br>
+										</div>
+										
+										<div class="cont_1 one_fourth">
+											<h5>Follow us</h5>
+											<!-- SOCIAL ICONS ON THE FOOTER HEAD -->
+											<div id="socials" class="footer_content"> 
+												<a href="#" id="facebook" target="_blank"></a>
+												<a href="#" id="twitter_social" target="_blank"></a>
+												<a href="#" id="flickr_social" target="_blank"></a>
+												<a href="#" id="picasa" target="_blank"></a>
+												<a href="#" id="rss" target="_blank"></a>
+												<a href="#" id="linkedin" target="_blank"></a>
+												<a href="#" id="youtube" target="_blank"></a>
+												<a href="#" id="vimeo" target="_blank"></a>
+											</div>
+											<!-- END SOCIALS -->
+										</div>
+										 <div class="cont_1 one_fourth">
+											<h5>Catch the news</h5>
+											<div class="footer_content">
+												<div class="verysmall_spacer"></div>
+												<span class="subcontent">Sign up here for awesome goodies.</span>
+												<!-- THE NEWSLETTER ABO -->
+												<form action="php/mail.php" method="post">
+													<fieldset>
+														<input type="text" id="newsletter_email" name="newsletter_email" value="Your E-mail address" />
+														
+														<a href="#" id="sendmail" class="button small color-style"><span>GO</span></a> 
+													</fieldset>
+												</form>
+												<span id="response" class="subcontent"></span>
+											</div>
+										 </div>
+										 <div class="one_fourth  last">
+											<p></p>
+										</div>
+																		
+									<div class="small_spacer"></div>
+								</div>
+								
+								<div id="footer_2" style="margin-top:-30px;margin-left:13px;">
+									<div class="one_fourth">
+											<br>
+									</div>
+									<div class="two_fourth">
+										<h5 class="cont_2">About Us</h5>
+										<p class="cont_2">
+											Lorem ipsum dolor sit amet, an case maiorum mediocritatem vim. Et alien um accusata definiebas duo. Ne dicta cetero evertitur mea, in his natum clita repudiandae. Stet prompta torquatos his et. Vim ullum omnium kiri euripidis cu, facilisi sententiae signiferumque duo at, vis aperiri corpora ut. Wisi augue vocibus eum in. Oporteat scripserit vis ea.
+										</p>
+									</div>
+									<div class="one_fourth last">
+											<br>
+									</div>
+										
+								</div>
+							</div>
+				</div>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			<!--
+			###################################################################################################################################
+																	
+																	- THE PARALLAX WORLD -		
+															Zooming Best values in range from 70 - 150
+															
+			###################################################################################################################################
+			-->
+			
+			<div class="cloud_bottom">
+				
+								<div id="cloud"  class="parallax_world" data-zoommin="100" data-zoommax="120">
+								
+								
+														<!--
+														##############################
+														  cloud_4  Settings  
+														##############################
+														-->
+
+														<div id="cloud_4" class="parallax_world_class fadeup" data-startx="188" data-endx="88" data-startx_ie8="188" data-endx_ie8="88" data-starty="41" data-endy="-16" data-starty_ie8="41" data-endy_ie8="-16" data-startskew="0" data-endskew="0" data-zoomxoffset="0" data-zoomxendoffset="28" data-zoomxoffset_ie8="0" data-zoomxendoffset_ie8="28">
+																						<img src="images/standard/parallax/cloud_4.png" alt="">
+																			</div>
+
+														<!--
+														##############################
+															cloud_3  Settings  
+														##############################
+														-->
+
+														<div id="cloud_3" class="parallax_world_class fadeup" data-startx="825" data-endx="595" data-startx_ie8="825" data-endx_ie8="595" data-starty="94" data-endy="75" data-starty_ie8="94" data-endy_ie8="75" data-startskew="0" data-endskew="0" data-zoomxoffset="114" data-zoomxendoffset="115" data-zoomxoffset_ie8="114" data-zoomxendoffset_ie8="115">
+																						<img src="images/standard/parallax/cloud_3.png" alt="">
+																			</div>
+
+														<!--
+														##############################
+															cloud_2  Settings  
+														##############################
+														-->
+
+														<div id="cloud_2" class="parallax_world_class fadeup" data-startx="-143" data-endx="-403" data-startx_ie8="-143" data-endx_ie8="-403" data-starty="91" data-endy="76" data-starty_ie8="91" data-endy_ie8="76" data-startskew="0" data-endskew="0" data-zoomxoffset="-57" data-zoomxendoffset="-57" data-zoomxoffset_ie8="-57" data-zoomxendoffset_ie8="-57">
+																						<img src="images/standard/parallax/cloud_2.png" alt="">
+																			</div>
+
+														<!--
+														##############################
+															 cloud_1  Settings  
+														##############################
+														-->
+
+														<div id="cloud_1" class="parallax_world_class fadeup" data-startx="251" data-endx="-71" data-startx_ie8="251" data-endx_ie8="-71" data-starty="159" data-endy="207" data-starty_ie8="159" data-endy_ie8="207" data-startskew="0" data-endskew="0" data-zoomxoffset="8" data-zoomxendoffset="9" data-zoomxoffset_ie8="8" data-zoomxendoffset_ie8="9">
+																						<img src="images/standard/parallax/cloud_1.png" alt="">
+																			</div>
+
+														<!--
+														##############################
+															 your_item  Settings  
+														##############################
+														-->
+
+														<div id="your_item" class="parallax_world_class fadeup" data-startx="632" data-endx="142" data-startx_ie8="632" data-endx_ie8="142" data-starty="157" data-endy="265" data-starty_ie8="157" data-endy_ie8="265" data-startskew="0" data-endskew="0" data-zoomxoffset="0" data-zoomxendoffset="0" data-zoomxoffset_ie8="0" data-zoomxendoffset_ie8="0">
+																						<img src="images/standard/parallax/your_item.png" alt="">
+																			</div>
+
+														<!--
+														##############################
+															 your_item_text  Settings  
+														##############################
+														-->
+
+														<div id="your_item_text" class="parallax_world_class fadeup" data-startx="514" data-endx="134" data-startx_ie8="514" data-endx_ie8="134" data-starty="73" data-endy="108" data-starty_ie8="73" data-endy_ie8="108" data-startskew="0" data-endskew="0" data-zoomxoffset="-19" data-zoomxendoffset="-20" data-zoomxoffset_ie8="-19" data-zoomxendoffset_ie8="-20">
+																						<img src="images/standard/parallax/your_item_text.png" alt="">
+																			</div>
+
+														<!--
+														##############################
+															 arrow  Settings  
+														##############################
+														-->
+
+														<div id="arrow" class="parallax_world_class fadeup" data-startx="516" data-endx="136" data-startx_ie8="516" data-endx_ie8="136" data-starty="89" data-endy="137" data-starty_ie8="89" data-endy_ie8="137" data-startskew="0" data-endskew="0" data-zoomxoffset="-13" data-zoomxendoffset="-12" data-zoomxoffset_ie8="-13" data-zoomxendoffset_ie8="-12">
+																						<img src="images/standard/parallax/arrow.png" alt="">
+																			</div>
+						
+								</div><!-- End cloud -->
+				
+			</div>
+
+	
+			
+			
+					
+			
+		<!-- 
+			##########################################
+				- THE CONFIGURATION DEMO PANEL -
+			##########################################
+			-->
+			<div id="panel">
+						<div class="config_button_top"></div>
+						<div class="config_button_bottom"></div>
+						<div class="paneldeclaration">Choose Theme:</div>
+						<div style="clear:both"></div>
+						<ul id="bgselector">
+							<li class="bg1"></li>
+							<li class="bg2"></li>
+							<li class="bg3"></li>
+							<li class="bg4"></li>
+							<li class="bg5"></li>
+							<li class="bg6"></li>
+						</ul>												
+						
+						
+						
+				</div>
+		
+		
+		
+		
+		<!--
+		##############################
+		 - ACTIVATE THE SCRIPTS HERE -
+		##############################
+		-->
+		<script type="text/javascript">
+			
+			$(document).ready(function() {
+				$.noConflict();					 									
+
+				
+							
+				<!-- THE ACTIVATION OF THE PARALLAX CLOUD  PLUGIN -->				
+							jQuery('#cloud').fhparallax({
+									editor:'off',
+									path:'parallax/js/ZeroClipboard.swf',
+									automatic:0,
+									mobile_auto_start:"yes"
+							})				
+
+							jQuery('#countdown').fhtimer({
+								   targetDD:4,
+								   targetMM:11,
+								   targetYY:2012
+							});
+							
+							jQuery('#footer').swapme({								   
+							});
+							
+							 <!-- Check the Newsletter value on Standard -->
+							 var newsletter_standard = jQuery("#newsletter_email").val();
+							 jQuery("#newsletter_email").focus(function(){
+								var $this = jQuery(this); 
+								$this.val($this.val()==newsletter_standard ? "" : $this.val());
+							  });
+							  jQuery("#newsletter_email").blur(function(){
+								var $this = jQuery(this); 
+								$this.val($this.val()== "" ? newsletter_standard : $this.val());
+							   });
+				
+		});
+		</script>
+	
+    
+
+	</body>
 </html>
