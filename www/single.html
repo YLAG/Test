@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jqm.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Single Post</title>
+    </head>
+    <body>
+    
+    <div id="single-post-page" data-role="page">
+    <div data-role="header">
+        <h1><i class="icon-home"></i>Promo-code.nl</h1>
+    </div><!-- /#header -->
+    
+    <div id="blog-content" data-role="content">
+        
+        
+        <div id="single-data"></div>
+
+
+        <script id="single-template" type="text/x-handlebars-template">
+            <h1>{{title}}</h1>
+          <h2></h2>
+            <div id="hide-{{id}}" align="right" style="display:visible">
+            
+            <a class="korting" id="Mmy-button" href="http://promo-code.nl/wp-content/themes/promocode/_code.php?l=nl&link={{id}}&title=<?php the_title(); ?>" target="_blank" onclick="jQuery('#clickreveal-{{id}}').show();jQuery('#hide-{{id}}').hide();openWindow('http://promo-code.nl/wp-content/themes/promocode/_code.php?l=nl&link={{id}}');return false;" rel="nofollow" alt="{{title}}" title="Nieuw venster opent, de {{title}} verschijnt hier!">
+            Toon code & open shop »</a><p><small></small></p>
+            
+            </div>
+            
+            <div id="clickreveal-{{id}}" class="clicktoreveal-code" style="display:none;">
+            
+            <?php echo SPEC($GLOBALS['_LANG']['_item1']) ?>{{custom_fields.code}}
+            <p><a href="http://promo-code.nl/wp-content/themes/promocode/_link.php?l=ios&link={{id}}" target="_blank">Open de shop >></a></p>
+            </div><img src="{{custom_fields.image}}" />
+                           <img src="{{attachments.[0].url}}" />
+        {{{content}}}
+        </script>
+
+
+        
+
+
+        <a data-role="button" data-transition="slide" href="index.html">Home</a>
+        <a data-role="button" data-transition="slide" href="blog.html">Blog</a>
+        <a data-role="button" data-transition="slide" href="portfolio.html">My Work</a>
+        <a data-role="button" data-transition="slide" href="contact.html">Contact</a>
+    </div><!-- /#home-page -->
+    
+    <div id="footer" data-role="footer">
+        <h1><i class="icon-coffee"></i> 2013 - built with phonegap and jquery mobile</h1>
+    </div><!-- /#footer -->
+
+
+
+
+    
+
+
+
+        <script type="text/javascript" src="cordova-2.7.0.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.js"></script>
+        <script type="text/javascript" src="js/libs/jqm.js"></script>
+        <script type="text/javascript" src="js/libs/handlebars.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.single();
+        </script>
+    </body>
+</html>
