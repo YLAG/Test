@@ -60,6 +60,7 @@
     </plugins>
 
     <access origin="*" />
-</widget>
+
+<gap:platform name="ios" />
 <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
-<gap:plugin name="org.apache.cordova.inappbrowser" />
+<gap:plugin name="org.apache.cordova.inappbrowser" /></widget>
