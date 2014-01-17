@@ -176,7 +176,7 @@
 - (BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSURL *url = [request URL];
-    if ( ([url fragment] != NULL) && ([[url fragment] rangeOfString:@"phonegap=ext"].location != NSNotFound))
+    if ( ([url fragment] != NULL) && ([[url fragment] rangeOfString:@"phonegap=external"].location != NSNotFound))
     {
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
