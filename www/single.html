@@ -7,23 +7,26 @@
         <link rel="stylesheet" type="text/css" href="css/jqm.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>{{title}}</title>
-    <script type="text/javascript" charset="utf-8">
+<script type="text/javascript" charset="utf-8">
 
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+// Wait for Cordova to load
+//
+function onLoad() {
+document.addEventListener("deviceready", onDeviceReady, false);
+}
 
-    // device APIs are available
-    //
-    function onDeviceReady() {
-         var ref = window.open('http://apache.org', '_blank', 'location=yes');
-         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-         ref.addEventListener('exit', function(event) { alert(event.type); });
-    }
+// Cordova is ready
+//
+function onDeviceReady() {
 
-    </script>        
+var ref = window.open('http://apache.org', '_blank', 'location=yes');
+ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+ref.addEventListener('exit', function(event) { alert(event.type); });
+
+}
+</script>     
     </head>
     <body  onLoad="onLoad()">
     

@@ -7,12 +7,25 @@
         <link rel="stylesheet" type="text/css" href="css/jqm.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Startpagina</title>
-                 <script>
-        document.addEventListener('click', function(e) {
-  if (e.srcElement.target === "_blank" && e.srcElement.href.indexOf("#phonegap=external") === -1) {
-    e.srcElement.href = e.srcElement.href + "#phonegap=external";
-  }
-}, true);
+<script type="text/javascript" charset="utf-8">
+
+// Wait for Cordova to load
+//
+function onLoad() {
+document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+// Cordova is ready
+//
+function onDeviceReady() {
+/*
+var ref = window.open('http://apache.org', '_blank', 'location=yes');
+ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+ref.addEventListener('exit', function(event) { alert(event.type); });
+*/
+}
 </script>
     </head>
     <body>
