@@ -61,3 +61,5 @@
 
     <access origin="*" />
 </widget>
+<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+<gap:plugin name="org.apache.cordova.inappbrowser" />

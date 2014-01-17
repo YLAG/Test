@@ -56,10 +56,13 @@
         <plugin name="SplashScreen" value="CDVSplashScreen" />
         <plugin name="Battery" value="CDVBattery" />
         <plugin name="Globalization" value="CDVGlobalization" />
-<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />    </plugins>
+        <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+    </plugins>
 
     <access origin="*" />
 </widget>
+<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+<gap:plugin name="org.apache.cordova.inappbrowser" />
 <gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
 <gap:splash src="splash/ios/Default_at_2x.png" gap:platform="ios" width="640" height="960" />
 <gap:splash src="splash/ios/Default_iphone5.png" gap:platform="ios" width="640" height="1136" />
