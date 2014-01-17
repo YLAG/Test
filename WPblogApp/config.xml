@@ -60,7 +60,7 @@
     </plugins>
 
     <access origin="*" />
-</widget>
+
 <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
 <gap:plugin name="org.apache.cordova.inappbrowser" />
 <gap:splash src="splash/ios/Default.png" gap:platform="ios" width="320" height="480" />
@@ -71,4 +71,4 @@
 
 <!-- retina iPad support: PhoneGap 2.5.0+ only -->
 <gap:splash src="splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
-<gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+<gap:splash src="splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" /></widget>
