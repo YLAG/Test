@@ -37,7 +37,7 @@ function OpenLink()
           <h2></h2>
             <div id="hide-{{id}}" align="right" style="display:visible">
             
-            <a class="korting" id="Mmy-button" target="_blank" href="http://promo-code.nl/wp-content/themes/promocode/_link.php?l=ios&link={{id}}#phonegap=external" rel="nofollow" alt="{{title}}" title="Nieuw venster opent, de {{title}} verschijnt hier!">
+            <a class="korting" id="Mmy-button" target="_system" href="http://promo-code.nl/wp-content/themes/promocode/_link.php?l=ios&link={{id}}" onclick="OpenLink" rel="nofollow" alt="{{title}}" title="Nieuw venster opent, de {{title}} verschijnt hier!">
             Toon code & open shop »</a><p><small></small></p>
             
             
@@ -46,7 +46,7 @@ function OpenLink()
             <div id="clickreveal-{{id}}" class="clicktoreveal-code" style="display:none;">
             
             <?php echo SPEC($GLOBALS['_LANG']['_item1']) ?>{{custom_fields.code}}
-            <p><a href="http://promo-code.nl/wp-content/themes/promocode/_link.php?l=ios&link={{id}}" target="_blank" target="_system">Open de shop >></a></p>
+            <p><a href="http://promo-code.nl/wp-content/themes/promocode/_link.php?l=ios&link={{id}}" target="_system">Open de shop >></a></p>
             </div><img src="{{custom_fields.image}}" />
                            <img src="{{attachments.[0].url}}" />
         {{{content}}}
