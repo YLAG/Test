@@ -173,16 +173,17 @@
 
 @end
 
-- (BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
+- (BOOL)webView:(UIWebView *)theWebView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSURL *url = [request URL];
-    if ( ([url fragment] != NULL) && ([[url fragment] rangeOfString:@"phonegap=external"].location != NSNotFound))
-    {
-        if ([[UIApplication sharedApplication] canOpenURL:url]) {
-            [[UIApplication sharedApplication] openURL:url];
-            return NO;
-        }
-    }
 
-  return [super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType];
+    // Intercept the external http requests and forward to Safari.app
+    // Otherwise forward to the PhoneGap WebView
+    if ([[url scheme] isEqualToString:@"http"] || [[url scheme] isEqualToString:@"https"]) {
+        [[UIApplication sharedApplication] openURL:url];
+        return NO;
+    }
+    else {
+        return [ super webView:theWebView shouldStartLoadWithRequest:request navigationType:navigationType ];
+    }
 }
